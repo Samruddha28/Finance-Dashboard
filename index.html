@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Finance Dashboard</title>
+      <link rel="stylesheet" href="Assignment.css"/>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+<body>
+  <div class="dashboard">
+    
+    <header>
+      <h1>Finance Dashboard</h1>
+      <p><h3>Track your investments and revenue growth</h3></p>
+    </header>
+
+    <section class="cards">
+           <div class="card">
+               <h2>Total Balance</h2>
+               <p class="value green">$120,000</p>
+           </div>
+           <div class="card">
+              <h2>Monthly Revenue</h2>
+              <p class="value blue">$25,000</p>
+          </div>
+              <div class="card">
+                 <h2>Expenses</h2>
+                <p class="value red">$8,500</p>
+              </div>
+    </section>
+
+    <section class="charts">
+         <div class="chart-container">
+             <h2>Revenue Trend</h2>
+             <canvas id="lineChart"></canvas>
+         </div>
+        <div class="chart-container">
+             <h2>Portfolio Allocation</h2>
+             <canvas id="doughnutChart"></canvas>
+        </div>
+    </section>
+  </div>
+
+     <script src="Assignment.js"></script>
+   </body>
+</html>
